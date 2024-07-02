@@ -35,7 +35,6 @@
   }
 
   function handlePressStart(direction) {
-    dispatch('interaction', { component: 'Moving', action: `Press Start ${direction}` });
     switch (direction) {
       case 'up':
         linearX = 1;

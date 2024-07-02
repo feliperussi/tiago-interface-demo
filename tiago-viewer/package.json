@@ -26,6 +26,6 @@
 		"postcss-import": "^16.1.0",
 		"roslib": "^1.4.1",
 		"socket.io-client": "^4.7.5",
-		"three": "^0.166.0"
+		"three": "^0.166.1"
 	}
 }

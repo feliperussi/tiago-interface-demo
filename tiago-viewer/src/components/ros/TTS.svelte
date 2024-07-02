@@ -12,11 +12,7 @@
     let ttsFeedback = "";
     let ttsResult = "";
   
-    const dispatch = createEventDispatcher();
-  
     function sendTTSMessage() {
-      dispatch('interaction', { component: 'TTS', action: 'Send TTS Message' });
-  
       const ttsClient = new ROSLIB.ActionClient({
         ros: ros,
         serverName: "/tts",
@@ -35,12 +31,10 @@
   
       goal.on("feedback", (feedback) => {
         ttsFeedback = JSON.stringify(feedback);
-        console.log("Feedback: ", feedback);
       });
   
       goal.on("result", (result) => {
         ttsResult = JSON.stringify(result);
-        console.log("Result: ", result);
       });
   
       goal.send();

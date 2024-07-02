@@ -211,18 +211,18 @@
       grid-template-columns: repeat(2, 1fr);
     }
   
-    .fixed-size-video {
+    /* .fixed-size-video {
       width: 100%;
       height: 100%;
-    }
+    } */
   
     button {
       margin-top: 0.6rem;
     }
   
-    h1 {
+    /* h1 {
       text-align: center;
-    }
+    } */
   </style>
   
   <div class="container">
